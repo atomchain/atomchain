@@ -1,0 +1,74 @@
+package: .
+import:
+- package: chain/account
+- package: chain/common
+  subpackages:
+  - config
+  - log
+  - messagebus
+  - password
+  - serialize
+- package: chain/consensus
+  subpackages:
+  - block
+  - transaction
+- package: chain/core/contract
+  subpackages:
+  - program
+- package: chain/crypto
+  subpackages:
+  - p256r1
+  - util
+- package: chain/errors
+- package: chain/net
+  subpackages:
+  - udp
+  - ws
+- package: chain/storage
+  subpackages:
+  - grockdb
+- package: chain/vm/avm/errors
+- package: chain/vm/avm/interfaces
+- package: chain/vm/avm/types
+- package: chain/vm/avm/utils
+- package: github.com/golang/groupcache
+  subpackages:
+  - lru
+- package: github.com/gorilla/websocket
+  version: ~1.4.0
+- package: github.com/howeyc/gopass
+- package: github.com/ipfs/go-cid
+  version: ~0.9.0
+- package: github.com/ipfs/go-ipfs-addr
+  version: ~0.1.25
+- package: github.com/itchyny/base58-go
+- package: github.com/libp2p/go-libp2p
+  version: ~6.0.23
+- package: github.com/libp2p/go-libp2p-kad-dht
+  version: ~4.4.12
+- package: github.com/libp2p/go-libp2p-net
+  version: ~3.0.15
+- package: github.com/libp2p/go-libp2p-peerstore
+  version: ~2.0.6
+- package: github.com/multiformats/go-multihash
+  version: ~1.0.8
+- package: github.com/ontio/ontology
+  version: ~1.5.1
+  subpackages:
+  - common/serialization
+- package: github.com/sirupsen/logrus
+  version: ~1.2.0
+- package: github.com/urfave/cli
+  version: ~1.20.0
+- package: golang.org/x/crypto
+  subpackages:
+  - ripemd160
+- package: golang.org/x/net
+  subpackages:
+  - ipv4
+testImport:
+- package: github.com/facebookgo/ensure
+- package: github.com/stretchr/testify
+  version: ~1.2.2
+  subpackages:
+  - assert

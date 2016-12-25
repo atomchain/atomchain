@@ -1,0 +1,32 @@
+{
+  "Configuration": {
+    "Magic": 1692,
+    "Version": 1,
+    "SeedList": [],
+    "HttpInfoPort": 12580,
+    "HttpInfoStart": true,
+    "HttpRestPort": 12581,
+    "HttpWsPort":12582,
+    "HttpJsonPort":12583,
+    "NoticeServerUrl":"",
+    "OauthServerUrl":"",
+    "NodePort": 12584,
+    "NodeType": "service",
+    "PrintLevel": 1,
+    "IsTLS": false,
+    "CertPath": "./sample-cert.pem",
+    "KeyPath": "./sample-cert-key.pem",
+    "CAPath": "./sample-ca.pem",
+    "MultiCoreNum": 4,
+    "TransactionFee": {
+	"Transfer": 0.0000
+    },
+
+    "WalletFile": "./mock/wallet-3.dat",
+    "ServerAddr" :  ":1670",
+    "TestSeed" :  "homotopicseed",
+    "TestnetBootnodes": ["http://44.44.47.33:5000/atomchain"],
+    "Period": 5,
+    "atomData" : "./atom_data3/"
+  }
+}

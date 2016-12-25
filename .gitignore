@@ -1,0 +1,8 @@
+.DS_Store
+rocksdb
+main
+vendor
+aqua_data*
+*.zip
+*.o
+wallet.dat
